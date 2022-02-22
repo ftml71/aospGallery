@@ -16,9 +16,11 @@
 
 package com.android.gallery3d.filtershow.category;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,6 +147,12 @@ public class MainPanel extends Fragment {
         }
         transaction.replace(R.id.category_panel_container, category, CategoryPanel.FRAGMENT_TAG);
         transaction.commitAllowingStateLoss();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        android.util.Log.i("FTML", " Fragment :    " + "MainPanel");
     }
 
     public void loadCategoryLookPanel(boolean force) {

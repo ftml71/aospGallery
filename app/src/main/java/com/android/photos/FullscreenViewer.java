@@ -18,6 +18,8 @@ package com.android.photos;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+
 import com.android.photos.views.TiledImageView;
 
 
@@ -28,7 +30,7 @@ public class FullscreenViewer extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        android.util.Log.i("FTML", " Activity :    " + "FullscreenViewer");
         String path = getIntent().getData().toString();
         mTextureView = new TiledImageView(this);
         mTextureView.setTileSource(new BitmapRegionTileSource(this, path, 0, 0), null);

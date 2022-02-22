@@ -16,6 +16,7 @@
 
 package com.android.gallery3d.filtershow.state;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -39,6 +40,12 @@ public class StatePanel extends Fragment {
 
     public void setMainPanel(MainPanel mainPanel) {
         mMainPanel = mainPanel;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        android.util.Log.i("FTML", " Fragment :    " + "StatePanel");
     }
 
     @Override

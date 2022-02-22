@@ -1,0 +1,1 @@
+/home/ftml/Documents/workspace/Daria/apps/AOSPGallery4AS/app/build/intermediates/ndkBuild/release/obj/local/x86

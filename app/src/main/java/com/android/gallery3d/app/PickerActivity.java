@@ -17,6 +17,7 @@
 package com.android.gallery3d.app;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,7 +36,7 @@ public class PickerActivity extends AbstractGalleryActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        android.util.Log.i("FTML", " Activity :    " +"PickerActivity");
         // We show the picker in two ways. One smaller screen we use a full
         // screen window with an action bar. On larger screen we use a dialog.
         boolean isDialog = getResources().getBoolean(R.bool.picker_is_dialog);

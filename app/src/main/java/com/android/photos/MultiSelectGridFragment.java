@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,6 +74,7 @@ public abstract class MultiSelectGridFragment extends Fragment
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+        android.util.Log.i("FTML", " Fragment :    " + "MultiSelectGridFragment");
         mHost = (MultiChoiceManager.Provider) activity;
         if (mGrid != null) {
             mGrid.setMultiChoiceModeListener(mHost.getMultiChoiceManager());

@@ -5,6 +5,12 @@ def nativeBuildSystem = 'none'
 
 android {
 
+    signingConfigs {
+        debug {
+//            storeFile file('/home/ftml/Downloads/keyring_daria (copy).jks')
+//            keyAlias 'shared'
+        }
+    }
     compileSdkVersion 28
     buildToolsVersion "26.0.3"
 

@@ -20,12 +20,14 @@ import com.android.libs.src_pd.gallery3d.util.IntentHelper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 /** Trampoline activity that launches the new Camera activity defined in IntentHelper. */
 public class CameraActivity extends Activity {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        android.util.Log.i("FTML", " Activity :    " +"CameraActivity");
         Intent intent = IntentHelper.getCameraIntent(CameraActivity.this);
         // Since this is being launched from a homescreen shorcut,
         // it's already in a new task. Start Camera activity and

@@ -51,6 +51,7 @@ public class WidgetClickHandler extends Activity {
     @TargetApi(ApiHelper.VERSION_CODES.HONEYCOMB)
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+        android.util.Log.i("FTML", " Activity :    " +"WidgetClickHandler");
         // The behavior is changed in JB, refer to b/6384492 for more details
         boolean tediousBack = Build.VERSION.SDK_INT >= ApiHelper.VERSION_CODES.JELLY_BEAN;
         Uri uri = getIntent().getData();

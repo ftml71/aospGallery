@@ -65,6 +65,7 @@ public class WidgetConfigure extends Activity {
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+        android.util.Log.i("FTML", " Activity :    " +"WidgetConfigure");
         mAppWidgetId = getIntent().getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1);
 
         if (mAppWidgetId == -1) {

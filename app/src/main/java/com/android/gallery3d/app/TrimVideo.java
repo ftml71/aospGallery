@@ -26,6 +26,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -70,6 +71,7 @@ public class TrimVideo extends Activity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         mContext = getApplicationContext();
+        android.util.Log.i("FTML", " Activity :    " +"TrimVideo");
         super.onCreate(savedInstanceState);
 
         requestWindowFeature(Window.FEATURE_ACTION_BAR);

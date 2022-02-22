@@ -18,8 +18,16 @@
 package com.android.photos;
 
 import android.app.Fragment;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.util.Log;
 
 
 public class PhotoFragment extends Fragment {
-
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        android.util.Log.i("FTML", " Fragment :    " + "PhotoFragment");
+    }
 }

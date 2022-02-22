@@ -18,6 +18,7 @@ package com.android.gallery3d.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.android.gallery3d.util.GalleryUtils;
 
@@ -26,7 +27,7 @@ public class DialogPicker extends PickerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        android.util.Log.i("FTML", " Activity :    " +"DialogPicker");
         int typeBits = GalleryUtils.determineTypeBits(this, getIntent());
         setTitle(GalleryUtils.getSelectionModePrompt(typeBits));
         Intent intent = getIntent();

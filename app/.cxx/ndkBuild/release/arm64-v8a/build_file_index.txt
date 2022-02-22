@@ -1,0 +1,2 @@
+/home/ftml/Documents/workspace/Daria/apps/AOSPGallery4AS/app/src/main/jni/Android.mk
+/home/ftml/Documents/workspace/Daria/apps/AOSPGallery4AS/app/src/main/jni/Application.mk

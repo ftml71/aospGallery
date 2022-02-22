@@ -37,6 +37,7 @@ public class BatchService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return mBinder;
+
     }
 
     // The threadpool returned by getThreadPool must have only 1 thread

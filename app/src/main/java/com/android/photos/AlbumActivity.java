@@ -18,6 +18,7 @@ package com.android.photos;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class AlbumActivity extends Activity implements MultiChoiceManager.Provider {
 
@@ -29,6 +30,7 @@ public class AlbumActivity extends Activity implements MultiChoiceManager.Provid
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " + "AlbumActivity");
         Bundle intentExtras = getIntent().getExtras();
         mMultiChoiceManager = new MultiChoiceManager(this);
         if (savedInstanceState == null) {

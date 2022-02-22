@@ -20,12 +20,14 @@ import com.android.libs.src_pd.gallery3d.util.IntentHelper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 /** Trampoline activity that launches the Gallery activity defined in IntentHelper. */
 public class Gallery extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " +"Gallery");
         Intent intent = IntentHelper.getGalleryIntent(Gallery.this);
         // Since this is being launched from a homescreen shortcut,
         // it's already in a new task. Start Gallery activity and

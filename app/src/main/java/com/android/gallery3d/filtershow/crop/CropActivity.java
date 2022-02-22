@@ -95,6 +95,7 @@ public class CropActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " +"CropActivity");
         Intent intent = getIntent();
         setResult(RESULT_CANCELED, new Intent());
         mCropExtras = getExtrasFromIntent(intent);

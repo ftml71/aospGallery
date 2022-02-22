@@ -69,6 +69,7 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " +"GalleryActivity"+ "  com.android.gallery3d.app  ");
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
 

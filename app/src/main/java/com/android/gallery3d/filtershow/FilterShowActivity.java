@@ -273,7 +273,7 @@ public class FilterShowActivity extends FragmentActivity implements OnItemClickL
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        android.util.Log.i("FTML", " Activity :    " +"FilterShowActivity");
         boolean onlyUsePortrait = getResources().getBoolean(R.bool.only_use_portrait);
         if (onlyUsePortrait) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

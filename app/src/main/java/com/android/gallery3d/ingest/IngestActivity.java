@@ -43,6 +43,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -94,6 +95,7 @@ public class IngestActivity extends Activity implements
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    android.util.Log.i("FTML", " Activity :    " +"IngestActivity");
     doBindHelperService();
 
     setContentView(R.layout.ingest_activity_item_list);

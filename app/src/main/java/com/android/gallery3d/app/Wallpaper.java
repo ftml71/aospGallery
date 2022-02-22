@@ -25,6 +25,7 @@ import android.graphics.Point;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 
 import com.android.libs.gallerycommon.common.ApiHelper;
@@ -54,6 +55,7 @@ public class Wallpaper extends Activity {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        android.util.Log.i("FTML", " Activity :    " +"Wallpaper");
         if (bundle != null) {
             mState = bundle.getInt(KEY_STATE);
             mPickedItem = (Uri) bundle.getParcelable(KEY_PICKED_ITEM);

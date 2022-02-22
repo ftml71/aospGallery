@@ -18,6 +18,7 @@ package com.android.gallery3d.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.android.gallery3d.R;
 import com.android.gallery3d.data.DataManager;
@@ -27,6 +28,7 @@ public class AlbumPicker extends PickerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " +"AlbumPicker");
         setTitle(R.string.select_album);
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();

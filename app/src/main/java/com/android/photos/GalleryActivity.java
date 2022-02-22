@@ -25,6 +25,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -42,6 +43,7 @@ public class GalleryActivity extends Activity implements MultiChoiceManager.Prov
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " + "GalleryActivity"+ "  com.android.photos  ");
         mMultiChoiceManager = new MultiChoiceManager(this);
         mViewPager = new ViewPager(this);
         mViewPager.setId(R.id.viewpager);

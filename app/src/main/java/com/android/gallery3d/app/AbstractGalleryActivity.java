@@ -73,6 +73,7 @@ public class AbstractGalleryActivity extends Activity implements GalleryContext 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.i("FTML", " Activity :    " +"AbstractGalleryActivity");
         mOrientationManager = new OrientationManager(this);
         toggleStatusBarByOrientation();
         getWindow().setBackgroundDrawable(null);
